@@ -6,6 +6,10 @@ import TextZone from './TextZone';
 
 
 function App() {
+  window.addEventListener("beforeunload", (event) => {
+    event.preventDefault();
+  });
+
   return (
     <div className="App">
       <Header />
