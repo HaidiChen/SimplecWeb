@@ -1,6 +1,4 @@
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
+import TextField from '@mui/material/TextField';
 
 
 interface HistoryZoneProperty {
@@ -9,16 +7,12 @@ interface HistoryZoneProperty {
 
 function HistoryZone(props : HistoryZoneProperty) {
 
-  const renderedTextHistory = props.textHistory.map((line : string) => {
-    return (
-      <ListItem disablePadding>
-        <ListItemText primary={line} />
-      </ListItem>
-    );
-  });
-
   return (
-      <List>{renderedTextHistory}</List>
+    <TextField fullWidth multiline inputProps={{ readOnly: true }}
+               value={props.textHistory.slice().reverse().join("\n")}
+               maxRows={20} label="Here's what you said"
+               variant="filled"
+    />
   );
 }
 

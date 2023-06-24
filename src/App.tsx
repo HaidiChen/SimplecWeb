@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import Body from './Body';
 import Header from './Header';
-import TextZone from './TextZone';
 
 
 function App() {
@@ -11,13 +11,13 @@ function App() {
   });
 
   return (
-    <div className="App">
-      <Header />
+    <>
+      <div className="App">
+        <Header />
+      </div>
 
-      <body>
-        <TextZone />
-      </body>
-    </div>
+      <Body />
+    </>
   );
 }
 
