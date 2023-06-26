@@ -2,24 +2,22 @@ import { useState } from 'react';
 
 import Container from '@mui/material/Container';
 
-import ActionZone from './ActionZone';
-import HistoryZone from './HistoryZone';
-import TextZone from './TextZone';
+import ActionZone from './components/ActionZone';
+import DisplayZone from './components/DisplayZone';
+import TextZone from './components/TextZone';
 
 
 function Body() {
-  const [textHistory, setTextHistory] = useState<string[]>([]);
+  const [blablaLines, setBlablaLines] = useState<string[]>([]);
 
   return (
     <body>
       <Container>
-        <TextZone textHistory={textHistory} onHistoryChange={setTextHistory} />
+        <TextZone blablaLines={blablaLines} handleBlablaLines={setBlablaLines} />
 
-        <hr />
+        <DisplayZone blablaLines={blablaLines} sx={{ marginTop: 2 }} />
 
-        <HistoryZone textHistory={textHistory} />
-
-        <ActionZone />
+        <ActionZone handleBlablaLines={setBlablaLines} blablaLines={blablaLines} />
       </Container>
     </body>
   );

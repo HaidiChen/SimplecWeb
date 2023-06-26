@@ -16,7 +16,13 @@ function Header() {
       >
         Learn React
       </a>
-      <Typography variant="h3">Simple Echo</Typography>
+
+      <Typography variant="h3" color="aqua">
+        Simplec
+        <Typography variant="h4">
+          (<mark>Simpl</mark>e <mark>Ec</mark>ho)
+        </Typography>
+      </Typography>
     </header>
   );
 }
