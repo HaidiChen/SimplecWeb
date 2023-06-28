@@ -28,7 +28,7 @@ export function saveBlablas(data : object) {
   }).then(
     (response) => {
       if (response.ok) {
-        return "Blabla Saved";
+        return response.json();
       }
     },
     (err) => {

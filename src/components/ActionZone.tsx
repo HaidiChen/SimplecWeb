@@ -22,7 +22,10 @@ function ActionZone(props : ActionZoneProperty) {
     saveBlablas(data).then((result) => {
       if (result === API_CALL_ERROR) {
         alert("Something wrong with saving your blabla ...");
-      } else {
+      } else if (!result) {
+        alert("Internal Server Error! try again later");
+      }
+      else {
         alert("Your id for your blabla : " + data.id + "\n\n"
             + "Note it down, you need it to get your blablas back.");
         props.handleBlablaLines([]);
