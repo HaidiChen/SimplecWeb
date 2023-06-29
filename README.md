@@ -1,3 +1,20 @@
+# Project: SimplecWeb (Simple Echo Website)
+
+This is a simple web page for echoing the typings entered by anyone. The web also provides 2
+features for loading and saving the blablas (the echoed text) by calling REST APIs provided by
+project called [SimplecService]().
+
+This project used [Material UI](https://mui.com/material-ui/getting-started/overview/) for rendering the page.
+
+# Sequence Diagram
+
+![Sequence Diagram](https://static.swimlanes.io/a67626c19ae6731e0912670c33144f6f.png)
+[source](https://swimlanes.io/d/dAabzHq2x)
+
+This project is part of the Simplec Application:
+![Simplec Application Diagram](https://static.swimlanes.io/e8161367c8de2a76ea839a6b8c7d25bc.png)
+[source](https://swimlanes.io/d/1fIlD4u_9)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
