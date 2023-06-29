@@ -2,7 +2,7 @@
 
 This is a simple web page for echoing the typings entered by anyone. The web also provides 2
 features for loading and saving the blablas (the echoed text) by calling REST APIs provided by
-project called [SimplecService]().
+project called [SimplecService](https://github.com/HaidiChen/SimplecService).
 
 This project used [Material UI](https://mui.com/material-ui/getting-started/overview/) for rendering the page.
 
